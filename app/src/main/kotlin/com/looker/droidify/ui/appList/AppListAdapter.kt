@@ -265,8 +265,12 @@ class AppListAdapter(
                     productItem.updated.takeIf { it > 0 } ?: productItem.added
                 }
 
+                val showDate = groupByReleaseDate &&
+                    source == AppListFragment.Source.AVAILABLE &&
+                    timestamp > 0
+
                 holder.releaseDate?.apply {
-                    if (timestamp > 0) {
+                    if (showDate) {
                         text = formatDate(timestamp)
                         isVisible = true
                     } else {
@@ -274,13 +278,12 @@ class AppListAdapter(
                     }
                 }
 
-                val showGrouping = groupByReleaseDate &&
-                    source == AppListFragment.Source.AVAILABLE &&
+                val showGrouping = showDate &&
                     searchQuery.isEmpty() &&
                     (sortOrder == SortOrder.UPDATED || sortOrder == SortOrder.ADDED)
 
                 holder.dateHeader?.apply {
-                    if (showGrouping && timestamp > 0) {
+                    if (showGrouping) {
                         val currentDate = formatDate(timestamp)
                         val prevDate = if (position > 0) {
                             val prevTimestamp = getTimestamp(position - 1)
