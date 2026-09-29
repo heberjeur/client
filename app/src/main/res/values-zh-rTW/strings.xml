@@ -285,4 +285,6 @@
     <string name="scan_qr_code">掃描 QR code</string>
     <string name="qr_camera_permission_required">需要相機權限才能掃描 QR codes</string>
     <string name="qr_scan_failed">QR code 掃描失敗</string>
+    <string name="group_apps_by_date">依發布日期將應用程式分組</string>
+    <string name="group_apps_by_date_desc">在探索中依發布日期將應用程式分組</string>
 </resources>

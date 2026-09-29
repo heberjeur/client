@@ -27,6 +27,8 @@ import com.looker.droidify.utility.common.log
 import com.looker.droidify.utility.common.nullIfEmpty
 import com.looker.droidify.utility.extension.resources.TypefaceExtra
 import com.looker.droidify.widget.CursorRecyclerAdapter
+import com.looker.droidify.datastore.model.SortOrder
+import com.looker.droidify.utility.common.formatDate
 import kotlin.system.measureTimeMillis
 import com.google.android.material.R as MaterialR
 
@@ -38,9 +40,11 @@ class AppListAdapter(
     enum class ViewType { PRODUCT, LOADING, EMPTY }
 
     private inner class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val dateHeader: TextView? = itemView.findViewById(R.id.date_header)
         val name = itemView.findViewById<TextView>(R.id.name)!!
         val status = itemView.findViewById<TextView>(R.id.status)!!
         val summary = itemView.findViewById<TextView>(R.id.summary)!!
+        val releaseDate: TextView? = itemView.findViewById(R.id.release_date)
         val icon = itemView.findViewById<ShapeableImageView>(R.id.icon)!!
 
         init {
@@ -106,6 +110,33 @@ class AppListAdapter(
             }
         }
 
+    var sortOrder: SortOrder = SortOrder.UPDATED
+        @SuppressLint("NotifyDataSetChanged")
+        set(value) {
+            if (field != value) {
+                field = value
+                notifyDataSetChanged()
+            }
+        }
+
+    var searchQuery: String = ""
+        @SuppressLint("NotifyDataSetChanged")
+        set(value) {
+            if (field != value) {
+                field = value
+                notifyDataSetChanged()
+            }
+        }
+
+    var groupByReleaseDate: Boolean = true
+        @SuppressLint("NotifyDataSetChanged")
+        set(value) {
+            if (field != value) {
+                field = value
+                notifyDataSetChanged()
+            }
+        }
+
     override val viewTypeClass: Class<ViewType>
         get() = ViewType::class.java
 
@@ -129,6 +160,20 @@ class AppListAdapter(
 
     private fun getProductItem(position: Int): ProductItem {
         return Database.ProductAdapter.transformItem(moveTo(position.coerceAtLeast(0)))
+    }
+
+    private fun getTimestamp(position: Int): Long {
+        if (position < 0 || position >= (cursor?.count ?: 0)) return 0L
+        val c = moveTo(position)
+        val updatedIdx = c.getColumnIndex(Database.Schema.Product.ROW_UPDATED)
+        val addedIdx = c.getColumnIndex(Database.Schema.Product.ROW_ADDED)
+        val updated = if (updatedIdx != -1) c.getLong(updatedIdx) else 0L
+        val added = if (addedIdx != -1) c.getLong(addedIdx) else 0L
+        return if (sortOrder == SortOrder.ADDED) {
+            if (added > 0) added else updated
+        } else {
+            if (updated > 0) updated else added
+        }
     }
 
     override fun onCreateViewHolder(
@@ -213,6 +258,47 @@ class AppListAdapter(
                     background = context.corneredBackground
                     6.dp.let { setPadding(it, it, it, it) }
                 }
+
+                val timestamp = if (sortOrder == SortOrder.ADDED) {
+                    productItem.added.takeIf { it > 0 } ?: productItem.updated
+                } else {
+                    productItem.updated.takeIf { it > 0 } ?: productItem.added
+                }
+
+                holder.releaseDate?.apply {
+                    if (timestamp > 0) {
+                        text = formatDate(timestamp)
+                        isVisible = true
+                    } else {
+                        isVisible = false
+                    }
+                }
+
+                val showGrouping = groupByReleaseDate &&
+                    source == AppListFragment.Source.AVAILABLE &&
+                    searchQuery.isEmpty() &&
+                    (sortOrder == SortOrder.UPDATED || sortOrder == SortOrder.ADDED)
+
+                holder.dateHeader?.apply {
+                    if (showGrouping && timestamp > 0) {
+                        val currentDate = formatDate(timestamp)
+                        val prevDate = if (position > 0) {
+                            val prevTimestamp = getTimestamp(position - 1)
+                            if (prevTimestamp > 0) formatDate(prevTimestamp) else null
+                        } else {
+                            null
+                        }
+                        if (currentDate != prevDate) {
+                            text = currentDate
+                            isVisible = true
+                        } else {
+                            isVisible = false
+                        }
+                    } else {
+                        isVisible = false
+                    }
+                }
+
                 val enabled = productItem.compatible || productItem.installedVersion.isNotEmpty()
                 holder.name.isEnabled = enabled
                 holder.status.isEnabled = enabled

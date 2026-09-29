@@ -195,4 +195,6 @@
     <string name="shizuku_not_installed">Shizuku er ikkje lagt inn</string>
     <string name="contains_nsfw">Har vakse innhald</string>
     <string name="connection_error_DESC">Greidde ikkje å binda saman med tenaren</string>
+    <string name="group_apps_by_date">Grupper appar etter lanseringsdato</string>
+    <string name="group_apps_by_date_desc">Grupper appar etter lanseringsdato i Utforsk</string>
 </resources>

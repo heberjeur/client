@@ -285,4 +285,6 @@
     <string name="scan_qr_code">QRコードをスキャン</string>
     <string name="qr_camera_permission_required">QRコードをスキャンするにはカメラの権限が必要です</string>
     <string name="qr_scan_failed">QRコードのスキャンに失敗しました</string>
+    <string name="group_apps_by_date">リリース日ごとにアプリをグループ化</string>
+    <string name="group_apps_by_date_desc">「見つける」でリリース日ごとにアプリをグループ化します</string>
 </resources>

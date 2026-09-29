@@ -48,4 +48,6 @@
     <string name="edit_repository">ترمیم کریں</string>
     <string name="error_shizuku_service_unavailable">شِزُوکو/سُوئی سروس چل نہیں رہی</string>
     <string name="error_shizuku_not_running_DESC">شِزُوکو/سُوئی سروس چل نہیں رہی</string>
+    <string name="group_apps_by_date">ریلیز کی تاریخ کے لحاظ سے ایپس کو گروپ کریں</string>
+    <string name="group_apps_by_date_desc">ایکسپلور میں ریلیز کی تاریخ کے لحاظ سے ایپس کو گروپ کریں</string>
 </resources>

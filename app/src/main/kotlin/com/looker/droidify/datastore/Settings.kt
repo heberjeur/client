@@ -50,6 +50,7 @@ data class Settings(
     val deleteApkOnInstall: Boolean = false,
     val dlStatsEnabled: Boolean = true,
     val rbLogsEnabled: Boolean = true,
+    val groupAppsByReleaseDate: Boolean = true,
 )
 
 @OptIn(ExperimentalSerializationApi::class)

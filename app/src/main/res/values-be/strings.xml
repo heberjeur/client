@@ -294,4 +294,6 @@
     <string name="scan_qr_code">Адсканаваць QR-код</string>
     <string name="qr_camera_permission_required">Для сканавання QR-кодаў патрабуецца дазвол на доступ да камеры</string>
     <string name="qr_scan_failed">Не ўдалося адсканаваць QR-код</string>
+    <string name="group_apps_by_date">Групаваць праграмы па даце выпуску</string>
+    <string name="group_apps_by_date_desc">Групаваць праграмы па даце выпуску ў раздзеле «Агляд»</string>
 </resources>

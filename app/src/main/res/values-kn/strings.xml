@@ -190,4 +190,6 @@
     <string name="material_you">ವಸ್ತು ನೀವು</string>
     <string name="material_you_desc">ವಸ್ತು ನೀವು ಬಣ್ಣದ ಥೀಮ್ ಬಳಸಿ</string>
     <string name="repository_unreachable">ರೆಪೊಸಿಟರಿಯನ್ನು ತಲುಪಲಾಗುವುದಿಲ್ಲ</string>
+    <string name="group_apps_by_date">ಬಿಡುಗಡೆ ದಿನಾಂಕದ ಪ್ರಕಾರ ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಗುಂಪು ಮಾಡಿ</string>
+    <string name="group_apps_by_date_desc">ಎಕ್ಸ್‌ಪ್ಲೋರ್‌ನಲ್ಲಿ ಬಿಡುಗಡೆ ದಿನಾಂಕದ ಪ್ರಕಾರ ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಗುಂಪು ಮಾಡಿ</string>
 </resources>

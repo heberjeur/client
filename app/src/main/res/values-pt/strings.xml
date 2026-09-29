@@ -291,4 +291,6 @@
     <string name="scan_qr_code">Digitalizar código QR</string>
     <string name="qr_camera_permission_required">Requer acesso à câmara para poder digitalizar códigos QR</string>
     <string name="qr_scan_failed">Erro ao digitalizar o código QR</string>
+    <string name="group_apps_by_date">Agrupar apps por data de lançamento</string>
+    <string name="group_apps_by_date_desc">Agrupar aplicativos por data de lançamento no Explorar</string>
 </resources>

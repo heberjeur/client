@@ -237,4 +237,6 @@
     <string name="unspecified">Uspecificeret</string>
     <string name="label_sdk_version">Mål: Android %1$s | Minimum: Android %2$s</string>
     <string name="shizuku_legacy_installer">Shizuku/Sui ældre installatør</string>
+    <string name="group_apps_by_date">Gruppér apps efter udgivelsesdato</string>
+    <string name="group_apps_by_date_desc">Gruppér applikationer efter udgivelsesdato i Udforsk</string>
 </resources>

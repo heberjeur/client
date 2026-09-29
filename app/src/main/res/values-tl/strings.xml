@@ -190,4 +190,6 @@
     <string name="whats_new">Anong bago</string>
     <string name="update_all">Update lahat</string>
     <string name="suggested">Iminungkahi</string>
+    <string name="group_apps_by_date">I-grupo ang mga app ayon sa petsa ng release</string>
+    <string name="group_apps_by_date_desc">I-grupo ang mga app ayon sa petsa ng release sa Explore</string>
 </resources>

@@ -238,4 +238,6 @@
     <string name="label_sdk_version">هدف: اندروید %1$s | حداقل: اندروید %2$s</string>
     <string name="always_choose">همیشه بپرس</string>
     <string name="select_installer">انتخاب نصاب</string>
+    <string name="group_apps_by_date">دسته‌بندی برنامه‌ها بر اساس تاریخ انتشار</string>
+    <string name="group_apps_by_date_desc">دسته‌بندی برنامه‌ها بر اساس تاریخ انتشار در کاوش</string>
 </resources>

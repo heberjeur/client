@@ -274,4 +274,6 @@
     <string name="rb_badge_unknown">Nezināms stāvoklis</string>
     <string name="custom_buttons_section">Lietotnes detalizētas informācijas saites</string>
     <string name="downloading_rb_logs">Lejupielādē atkārtojamības žurnālus</string>
+    <string name="group_apps_by_date">Grupēt lietotnes pēc izlaišanas datuma</string>
+    <string name="group_apps_by_date_desc">Grupēt lietotnes pēc izlaišanas datuma sadaļā Izpētīt</string>
 </resources>

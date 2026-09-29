@@ -232,4 +232,6 @@
     <string name="repository_not_found">এই ভাণ্ডারগুলো পাওয়া যায়নি</string>
     <string name="switch_to_default_installer">সহজাতে পরিবর্তন করো</string>
     <string name="label_unknown_sdk">অজানা (%d)</string>
+    <string name="group_apps_by_date">মুক্তির তারিখ অনুসারে অ্যাপ দলভুক্ত করুন</string>
+    <string name="group_apps_by_date_desc">এক্সপ্লোরে মুক্তির তারিখ অনুসারে অ্যাপ দলভুক্ত করুন</string>
 </resources>

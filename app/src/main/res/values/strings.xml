@@ -297,4 +297,6 @@
     <string name="scan_qr_code">Scan QR code</string>
     <string name="qr_camera_permission_required">Camera permission is required to scan QR codes</string>
     <string name="qr_scan_failed">Failed to scan QR code</string>
+    <string name="group_apps_by_date">Group apps by release date</string>
+    <string name="group_apps_by_date_desc">Group applications by release date in Explorer</string>
 </resources>

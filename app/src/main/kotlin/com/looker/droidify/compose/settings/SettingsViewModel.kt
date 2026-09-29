@@ -98,6 +98,12 @@ class SettingsViewModel @Inject constructor(
         }
     }
 
+    fun setGroupAppsByReleaseDate(enabled: Boolean) {
+        viewModelScope.launch {
+            settingsRepository.setGroupAppsByReleaseDate(enabled)
+        }
+    }
+
     fun setAutoUpdate(enabled: Boolean) {
         viewModelScope.launch {
             settingsRepository.setAutoUpdate(enabled)

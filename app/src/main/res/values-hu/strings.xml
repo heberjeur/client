@@ -288,4 +288,6 @@
     <string name="scan_qr_code">QR-kód beolvasása</string>
     <string name="qr_camera_permission_required">A QR-kódok beolvasásához kamera-hozzáférési engedély szükséges</string>
     <string name="qr_scan_failed">A QR-kód beolvasása nem sikerült</string>
+    <string name="group_apps_by_date">Alkalmazások csoportosítása kiadási dátum szerint</string>
+    <string name="group_apps_by_date_desc">Alkalmazások csoportosítása a Felfedezésben a kiadási dátum szerint</string>
 </resources>

@@ -272,4 +272,6 @@
     <string name="rb_info">Jos build on uudelleenluotava, se tarkoittaa, että kyseisen apk:n build on kyseisestä lähteestä</string>
     <string name="custom_buttons_section">Sovelluksen lisätietojen linkit</string>
     <string name="custom_button_label">Merkki</string>
+    <string name="group_apps_by_date">Ryhmittele sovellukset julkaisupäivämäärän mukaan</string>
+    <string name="group_apps_by_date_desc">Ryhmittele sovellukset julkaisupäivämäärän mukaan Tutki-osiossa</string>
 </resources>

@@ -82,6 +82,8 @@ interface SettingsRepository {
     suspend fun setRBLogsEnabled(enabled: Boolean)
 
     suspend fun clearRbLogLastModified()
+
+    suspend fun setGroupAppsByReleaseDate(enabled: Boolean)
 }
 
 inline fun <T> SettingsRepository.get(crossinline block: suspend Settings.() -> T): Flow<T> {

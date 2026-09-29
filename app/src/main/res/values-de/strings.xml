@@ -288,4 +288,6 @@
     <string name="scan_qr_code">QR-Code scannen</string>
     <string name="qr_camera_permission_required">Für das Scannen von QR-Codes ist die Kameraberechtigung erforderlich</string>
     <string name="qr_scan_failed">QR-Code konnte nicht gescannt werden</string>
+    <string name="group_apps_by_date">Apps nach Veröffentlichungsdatum gruppieren</string>
+    <string name="group_apps_by_date_desc">Anwendungen im Explorer nach Veröffentlichungsdatum gruppieren</string>
 </resources>

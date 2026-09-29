@@ -294,4 +294,6 @@
     <string name="scan_qr_code">Naskenovat QR kód</string>
     <string name="qr_camera_permission_required">Pro skenování QR kódů je vyžadováno oprávnění k fotoaparátu</string>
     <string name="qr_scan_failed">Nepodařilo se naskenovat QR kód</string>
+    <string name="group_apps_by_date">Seskupit aplikace podle data vydání</string>
+    <string name="group_apps_by_date_desc">Seskupit aplikace podle data vydání v Průzkumníku</string>
 </resources>

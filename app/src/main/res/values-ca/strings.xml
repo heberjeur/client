@@ -205,4 +205,6 @@
     <string name="export_repos_title">Exporta els repositoris</string>
     <string name="export_repos_DESC">Exporta tots els repositoris a un fitxer</string>
     <string name="home_screen_swiping">Lliscar la pantalla d\'inici</string>
+    <string name="group_apps_by_date">Agrupa les aplicacions per data de llançament</string>
+    <string name="group_apps_by_date_desc">Agrupa les aplicacions per data de llançament a Explora</string>
 </resources>

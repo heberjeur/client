@@ -589,7 +589,8 @@ object Database {
         product.${Schema.Product.ROW_COMPATIBLE} != 0 AND product.${Schema.Product.ROW_VERSION_CODE} >
         COALESCE(installed.${Schema.Installed.ROW_VERSION_CODE}, 0xffffffff) AND $signatureMatches)
         AS ${Schema.Synthetic.ROW_CAN_UPDATE}, product.${Schema.Product.ROW_COMPATIBLE},
-        product.${Schema.Product.ROW_DATA_ITEM},"""
+        product.${Schema.Product.ROW_DATA_ITEM}, product.${Schema.Product.ROW_UPDATED},
+        product.${Schema.Product.ROW_ADDED},"""
 
             if (searchQuery.isNotEmpty()) {
                 builder += """(((product.${Schema.Product.ROW_NAME} LIKE ? OR
@@ -693,6 +694,14 @@ object Database {
                             .getInt(cursor.getColumnIndexOrThrow(Schema.Synthetic.ROW_CAN_UPDATE)) != 0
                         this.matchRank = cursor
                             .getInt(cursor.getColumnIndexOrThrow(Schema.Synthetic.ROW_MATCH_RANK))
+                        val updatedIndex = cursor.getColumnIndex(Schema.Product.ROW_UPDATED)
+                        if (updatedIndex != -1) {
+                            this.updated = cursor.getLong(updatedIndex)
+                        }
+                        val addedIndex = cursor.getColumnIndex(Schema.Product.ROW_ADDED)
+                        if (addedIndex != -1) {
+                            this.added = cursor.getLong(addedIndex)
+                        }
                     }
                 }
         }

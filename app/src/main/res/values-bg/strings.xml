@@ -288,4 +288,6 @@
     <string name="scan_qr_code">Сканиране на QR код</string>
     <string name="qr_camera_permission_required">За сканиране на QR кодове се изисква разрешение за достъп до камерата</string>
     <string name="qr_scan_failed">Неуспешно сканиране на QR кода</string>
+    <string name="group_apps_by_date">Групиране на приложенията по дата на издаване</string>
+    <string name="group_apps_by_date_desc">Групиране на приложенията по дата на издаване в Разглеждане</string>
 </resources>

@@ -39,4 +39,6 @@
     <string name="error_shizuku_not_granted_DESC">Shizuku/Sui рұқсаты берілген жоқ</string>
     <string name="error_shizuku_not_installed">Shizuku/Sui орнатылмаған</string>
     <string name="error_shizuku_not_installed_DESC">Shizuku/Sui орнатылған жоқ</string>
+    <string name="group_apps_by_date">Қолданбаларды шығарылған күні бойынша топтастыру</string>
+    <string name="group_apps_by_date_desc">Шолу бөлімінде қолданбаларды шығарылған күні бойынша топтастыру</string>
 </resources>

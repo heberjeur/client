@@ -285,4 +285,6 @@
     <string name="custom_buttons_export">Elporti butonojn</string>
     <string name="custom_buttons_import">Enporti butonojn</string>
     <string name="custom_buttons_imported">Propraj butonoj enportitaj</string>
+    <string name="group_apps_by_date">Grupigi apojn laŭ eldondato</string>
+    <string name="group_apps_by_date_desc">Grupigi apojn laŭ eldondato en Esplori</string>
 </resources>

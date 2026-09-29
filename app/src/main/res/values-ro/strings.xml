@@ -291,4 +291,6 @@
     <string name="scan_qr_code">Scanează codul QR</string>
     <string name="qr_camera_permission_required">Este necesară permisiunea camerei pentru scanarea codurilor QR</string>
     <string name="qr_scan_failed">Scanarea codului QR a eșuat</string>
+    <string name="group_apps_by_date">Grupează aplicațiile după data lansării</string>
+    <string name="group_apps_by_date_desc">Grupează aplicațiile după data lansării în Explorare</string>
 </resources>

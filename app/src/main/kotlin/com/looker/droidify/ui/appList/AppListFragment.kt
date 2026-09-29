@@ -87,7 +87,11 @@ class AppListFragment() : Fragment(), CursorOwner.Callback {
             isMotionEventSplittingEnabled = false
             setHasFixedSize(true)
             recycledViewPool.setMaxRecycledViews(AppListAdapter.ViewType.PRODUCT.ordinal, 30)
-            appListAdapter = AppListAdapter(source, mainActivity::navigateProduct)
+            appListAdapter = AppListAdapter(source, mainActivity::navigateProduct).apply {
+                this.searchQuery = this@AppListFragment.searchQuery
+                this.sortOrder = viewModel.state.value.sortOrder
+                this.groupByReleaseDate = viewModel.state.value.groupByReleaseDate
+            }
             adapter = appListAdapter
             systemBarsPadding()
             RecyclerFastScroller(this)
@@ -122,6 +126,8 @@ class AppListFragment() : Fragment(), CursorOwner.Callback {
                 }
                 launch {
                     viewModel.state.collect {
+                        appListAdapter.sortOrder = it.sortOrder
+                        appListAdapter.groupByReleaseDate = it.groupByReleaseDate
                         mainActivity.cursorOwner.attach(
                             callback = this@AppListFragment,
                             request = it.toRequest(source, searchQuery),
@@ -171,6 +177,7 @@ class AppListFragment() : Fragment(), CursorOwner.Callback {
     fun setSearchQuery(newSearchQuery: String) {
         if (view != null) {
             searchQuery = newSearchQuery
+            appListAdapter.searchQuery = newSearchQuery
             mainActivity.cursorOwner.attach(
                 callback = this,
                 request = viewModel.state.value.toRequest(source, searchQuery),

@@ -17,6 +17,8 @@ data class ProductItem(
     var compatible: Boolean,
     var canUpdate: Boolean,
     var matchRank: Int,
+    var updated: Long = 0L,
+    var added: Long = 0L,
 ) {
     sealed interface Section : Parcelable {
 

@@ -282,4 +282,6 @@
     <string name="download_statistics_summary">Ambil dan tampilkan jumlah unduhan bulanan dari IzzyOnDroid. Menonaktifkan fitur ini akan menghapus statistik unduhan yang ada.</string>
     <string name="reproducibility_logs">Log Reproduksibilitas</string>
     <string name="reproducibility_logs_summary">Ambil dan tampilkan log verifikasi build yang dapat direproduksi dari IzzyOnDroid. Menonaktifkan fitur ini akan menghapus log reproduksibilitas yang ada.</string>
+    <string name="group_apps_by_date">Kelompokkan aplikasi berdasarkan tanggal rilis</string>
+    <string name="group_apps_by_date_desc">Kelompokkan aplikasi berdasarkan tanggal rilis di Jelajahi</string>
 </resources>

@@ -201,4 +201,6 @@
     <string name="repository_not_found">Følgende pakkebrønner ble funnet</string>
     <string name="special_credits">Spesiell takk til</string>
     <string name="shizuku_not_installed">Shizuku er ikke installert</string>
+    <string name="group_apps_by_date">Grupper apper etter lanseringsdato</string>
+    <string name="group_apps_by_date_desc">Grupper apper etter lanseringsdato i Utforsk</string>
 </resources>

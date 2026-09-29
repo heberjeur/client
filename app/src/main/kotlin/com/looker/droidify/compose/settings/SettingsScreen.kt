@@ -178,6 +178,15 @@ fun SettingsScreen(
                 )
             }
 
+            item {
+                SwitchSettingItem(
+                    title = stringResource(R.string.group_apps_by_date),
+                    description = stringResource(R.string.group_apps_by_date_desc),
+                    checked = settings.groupAppsByReleaseDate,
+                    onCheckedChange = viewModel::setGroupAppsByReleaseDate,
+                )
+            }
+
             item { SettingHeader(title = stringResource(R.string.updates)) }
 
             item {

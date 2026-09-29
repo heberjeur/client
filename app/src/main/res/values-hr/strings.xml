@@ -278,4 +278,6 @@
     <string name="custom_buttons_export">Izvezi gumbove</string>
     <string name="custom_buttons_import">Uvezi gumbove</string>
     <string name="custom_buttons_imported">Prilagođeni gumbi su uvezeni</string>
+    <string name="group_apps_by_date">Grupiraj aplikacije prema datumu izdanja</string>
+    <string name="group_apps_by_date_desc">Grupiraj aplikacije prema datumu izdanja u Istraži</string>
 </resources>

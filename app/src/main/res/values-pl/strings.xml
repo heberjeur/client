@@ -281,4 +281,6 @@
     <string name="custom_buttons">Niestandardowe przyciski</string>
     <string name="custom_buttons_description">Dodaj szybkie linki do usług zewnętrznych w szczegółach aplikacji</string>
     <string name="custom_buttons_section">Linki dotyczące szczegółów aplikacji</string>
+    <string name="group_apps_by_date">Grupuj aplikacje według daty wydania</string>
+    <string name="group_apps_by_date_desc">Grupuj aplikacje według daty wydania w Eksploruj</string>
 </resources>

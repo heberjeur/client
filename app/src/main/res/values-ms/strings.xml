@@ -209,4 +209,6 @@
     <string name="prefs_personalization">Pemperibadian</string>
     <string name="show_less">Tunjukkan Kurang</string>
     <string name="update_all">Kemaskini semua</string>
+    <string name="group_apps_by_date">Kumpulkan aplikasi mengikut tarikh keluaran</string>
+    <string name="group_apps_by_date_desc">Kumpulkan aplikasi mengikut tarikh keluaran dalam Teroka</string>
 </resources>

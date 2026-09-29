@@ -284,4 +284,6 @@
     <string name="custom_buttons_export">Εξαγωγή κουμπιών</string>
     <string name="custom_buttons_import">Εισαγωγή κουμπιών</string>
     <string name="custom_buttons_imported">Προσαρμοσμένα κουμπιά εισήχθησαν</string>
+    <string name="group_apps_by_date">Ομαδοποίηση εφαρμογών κατά ημερομηνία κυκλοφορίας</string>
+    <string name="group_apps_by_date_desc">Ομαδοποίηση εφαρμογών κατά ημερομηνία κυκλοφορίας στην Εξερεύνηση</string>
 </resources>

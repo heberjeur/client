@@ -291,4 +291,6 @@
     <string name="scan_qr_code">Escanear código QR</string>
     <string name="qr_camera_permission_required">Se requiere permiso de cámara para escanear códigos QR</string>
     <string name="qr_scan_failed">No se ha podido escanear el código QR</string>
+    <string name="group_apps_by_date">Agrupar aplicaciones por fecha de lanzamiento</string>
+    <string name="group_apps_by_date_desc">Agrupar aplicaciones por fecha de lanzamiento en Explorar</string>
 </resources>

@@ -95,6 +95,8 @@ data class Product(
             compatible = compatible,
             canUpdate = false,
             matchRank = 0,
+            updated = updated,
+            added = added,
         )
     }
 

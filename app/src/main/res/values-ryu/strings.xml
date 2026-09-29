@@ -201,4 +201,6 @@
     <string name="repository_not_found">ちぎぬリポジトリぬみちかやびらんたん</string>
     <string name="special_credits">スペシャルクレジット</string>
     <string name="shizuku_not_installed">Shizukuやしがインストールさりやびらん</string>
+    <string name="group_apps_by_date">リリース日ごとにアプリばグループ化</string>
+    <string name="group_apps_by_date_desc">「見つける」でリリース日ごとにアプリばグループ化さびーん</string>
 </resources>

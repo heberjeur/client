@@ -245,4 +245,6 @@
     <string name="action_enable_repo">Aktivera</string>
     <string name="copy_error_details">Kopiera felmeddelandet till urklipp</string>
     <string name="copied_to_clipboard">Kopierad</string>
+    <string name="group_apps_by_date">Gruppera appar efter utgivningsdatum</string>
+    <string name="group_apps_by_date_desc">Gruppera program efter utgivningsdatum i Utforska</string>
 </resources>

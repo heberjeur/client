@@ -285,4 +285,6 @@
     <string name="scan_qr_code">显示二维码</string>
     <string name="qr_camera_permission_required">扫描二维码需要相机权限</string>
     <string name="qr_scan_failed">未能扫描二维码</string>
+    <string name="group_apps_by_date">按发布日期对应用分组</string>
+    <string name="group_apps_by_date_desc">在探索中按发布日期对应用进行分组</string>
 </resources>

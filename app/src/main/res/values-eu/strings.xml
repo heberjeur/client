@@ -70,4 +70,6 @@
         <item quantity="other">%d ordu</item>
     </plurals>
     <string name="cant_edit_sync_DESC">Ezin da biltegia editatu, unean sinkronizatzen ari delako.</string>
+    <string name="group_apps_by_date">Multzokatu aplikazioak argitaratze-dataren arabera</string>
+    <string name="group_apps_by_date_desc">Multzokatu aplikazioak argitaratze-dataren arabera Esploratu atalean</string>
 </resources>

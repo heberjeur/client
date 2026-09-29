@@ -225,4 +225,6 @@
     <string name="insufficient_storage_DESC">इस एप्लिकेशन को इंस्टॉल करने के लिए डिवाइस पर पर्याप्त खाली जगह नहीं है। कुछ जगह खाली करने का प्रयास करें</string>
     <string name="switch_to_default_installer">डिफ़ॉल्ट पर स्विच करें</string>
     <string name="label_open_video">वीडियो</string>
+    <string name="group_apps_by_date">रिलीज़ की तारीख के अनुसार ऐप्स समूहीकृत करें</string>
+    <string name="group_apps_by_date_desc">एक्सप्लोर में रिलीज़ की तारीख के अनुसार ऐप्स समूहीकृत करें</string>
 </resources>

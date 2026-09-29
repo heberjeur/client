@@ -222,4 +222,6 @@
     <string name="uninstalled_application">ଅନ୍-ଇନଷ୍ଟଲ୍ ହୋଇ ଯାଇଛି</string>
     <string name="installation_failed_DESC">%s ଇନସ୍ଟଲ କରିବାରେ ଅସଫଳ</string>
     <string name="insufficient_storage_DESC">ଏହି ଆପ୍ଲିକସନ୍ କୁ ଇନଷ୍ଟଲ୍ କରିବା ପାଇଁ ଆପଣଙ୍କ ଫୋନ୍ ରେ ଯଥ୍ୟେଷ୍ଟ ଜାଗା ନାହି।କିଛି ଜାଗା ସଫା କରି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="group_apps_by_date">ମୁକ୍ତିଲାଭ ତାରିଖ ଅନୁସାରେ ଆପ୍‌ଗୁଡ଼ିକୁ ଗୋଷ୍ଠୀଭୁକ୍ତ କରନ୍ତୁ</string>
+    <string name="group_apps_by_date_desc">ଏକ୍ସପ୍ଲୋରରେ ମୁକ୍ତିଲାଭ ତାରିଖ ଅନୁସାରେ ଆପ୍‌ଗୁଡ଼ିକୁ ଗୋଷ୍ଠୀଭୁକ୍ତ କରନ୍ତୁ</string>
 </resources>

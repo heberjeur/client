@@ -254,4 +254,6 @@
     <string name="monthly">חודשי</string>
     <string name="downloading_rb_logs">מוריד יומני שחזור בנייה</string>
     <string name="downloading_download_stats">מוריד סטטיסטיקות הורדות</string>
+    <string name="group_apps_by_date">קיבוץ יישומים לפי תאריך שחרור</string>
+    <string name="group_apps_by_date_desc">קיבוץ יישומים לפי תאריך שחרור בכרטיסיית חקירה</string>
 </resources>

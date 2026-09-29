@@ -288,4 +288,6 @@
     <string name="scan_qr_code">QR kodu tara</string>
     <string name="qr_camera_permission_required">QR kodu taramak için kamera izni gereklidir</string>
     <string name="qr_scan_failed">QR kodu taranamadı</string>
+    <string name="group_apps_by_date">Uygulamaları çıkış tarihine göre grupla</string>
+    <string name="group_apps_by_date_desc">Keşfet\'te uygulamaları çıkış tarihine göre grupla</string>
 </resources>

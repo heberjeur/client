@@ -224,4 +224,6 @@
     <string name="label_open_video">Video</string>
     <string name="label_unknown_sdk">Incognite (%d)</string>
     <string name="open_shizuku">Aperir Shizuku</string>
+    <string name="group_apps_by_date">Gruppar applicationes per data de publication</string>
+    <string name="group_apps_by_date_desc">Gruppar applicationes per data de publication in Explorar</string>
 </resources>

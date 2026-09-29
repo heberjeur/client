@@ -300,4 +300,6 @@
     <string name="scan_qr_code">امسح رمز QR</string>
     <string name="qr_camera_permission_required">يلزم الحصول على إذن الكاميرا لمسح رموز QR</string>
     <string name="qr_scan_failed">فشل مسح رمز QR</string>
+    <string name="group_apps_by_date">تجميع التطبيقات حسب تاريخ الإصدار</string>
+    <string name="group_apps_by_date_desc">تجميع التطبيقات حسب تاريخ الإصدار في الاستكشاف</string>
 </resources>

@@ -196,4 +196,6 @@
     <string name="waiting_to_start_installation">Čakanje na začetek namestitve …</string>
     <string name="auto_update">Samodejno posodobite aplikacije</string>
     <string name="auto_update_apps">Poskusite samodejno namestiti posodobitve</string>
+    <string name="group_apps_by_date">Združi aplikacije po datumu izdaje</string>
+    <string name="group_apps_by_date_desc">Združi aplikacije po datumu izdaje v Raziskovanju</string>
 </resources>

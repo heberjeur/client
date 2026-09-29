@@ -274,4 +274,6 @@
     <string name="custom_button_icon">Ikoon</string>
     <string name="custom_button_templates">Mallid</string>
     <string name="custom_button_delete_confirmation">Kas kustutada nupp \"%1$s\"?</string>
+    <string name="group_apps_by_date">Rühmita rakendused avaldamiskuupäeva järgi</string>
+    <string name="group_apps_by_date_desc">Rühmita rakendused Uurijas avaldamiskuupäeva järgi</string>
 </resources>

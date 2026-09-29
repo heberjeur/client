@@ -218,4 +218,6 @@
     <string name="import_repos_DESC">Importuoti visas saugyklas iš failo</string>
     <string name="export_repos_title">Eksportuoti saugyklas</string>
     <string name="export_repos_DESC">Eksportuoti visas saugyklas į failą</string>
+    <string name="group_apps_by_date">Grupuoti programas pagal išleidimo datą</string>
+    <string name="group_apps_by_date_desc">Grupuoti programas pagal išleidimo datą Naršyme</string>
 </resources>

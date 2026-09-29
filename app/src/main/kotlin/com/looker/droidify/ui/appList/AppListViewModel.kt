@@ -35,17 +35,23 @@ class AppListViewModel
         .get { sortOrder }
         .asStateFlow(SortOrder.UPDATED)
 
+    private val groupByReleaseDateFlow = settingsRepository
+        .get { groupAppsByReleaseDate }
+        .asStateFlow(true)
+
     private val sections = MutableStateFlow<ProductItem.Section>(All)
 
     val state = combine(
         skipSignatureStream,
         sortOrderFlow,
+        groupByReleaseDateFlow,
         sections,
-    ) { skipSignature, sortOrder, section ->
+    ) { skipSignature, sortOrder, groupByReleaseDate, section ->
         AppListState(
             sections = section,
             sortOrder = sortOrder,
             skipSignatureCheck = skipSignature,
+            groupByReleaseDate = groupByReleaseDate,
         )
     }.asStateFlow(AppListState())
 
@@ -71,6 +77,7 @@ data class AppListState(
     val sections: ProductItem.Section = All,
     val sortOrder: SortOrder = SortOrder.UPDATED,
     val skipSignatureCheck: Boolean = false,
+    val groupByReleaseDate: Boolean = true,
 ) {
     fun toRequest(source: AppListFragment.Source, searchQuery: String) = when (source) {
         AppListFragment.Source.AVAILABLE -> Available(

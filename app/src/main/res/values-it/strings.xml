@@ -278,4 +278,6 @@
     <string name="custom_buttons_export">Esporta bottoni</string>
     <string name="custom_buttons_import">Importa bottoni</string>
     <string name="custom_buttons_imported">Bottoni personalizzati importati</string>
+    <string name="group_apps_by_date">Raggruppa le app per data di rilascio</string>
+    <string name="group_apps_by_date_desc">Raggruppa le applicazioni per data di rilascio in Esplora</string>
 </resources>

@@ -134,4 +134,11 @@ class PreferenceSettingsRepositoryTest {
         val settings = repository.getInitial()
         assertTrue(settings.deleteApkOnInstall)
     }
+
+    @Test
+    fun `setGroupAppsByReleaseDate updates grouping setting`() = runTest {
+        repository.setGroupAppsByReleaseDate(false)
+        val settings = repository.getInitial()
+        assertFalse(settings.groupAppsByReleaseDate)
+    }
 }

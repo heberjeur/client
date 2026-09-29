@@ -18,6 +18,8 @@ fun ProductItem.serialize(generator: JsonGenerator) {
     generator.writeBooleanField("compatible", compatible)
     generator.writeBooleanField("canUpdate", canUpdate)
     generator.writeNumberField("matchRank", matchRank)
+    generator.writeNumberField("updated", updated)
+    generator.writeNumberField("added", added)
 }
 
 fun JsonParser.productItem(): ProductItem {
@@ -32,6 +34,8 @@ fun JsonParser.productItem(): ProductItem {
     var compatible = false
     var canUpdate = false
     var matchRank = 0
+    var updated = 0L
+    var added = 0L
     forEachKey {
         when {
             it.number("repositoryId") -> repositoryId = valueAsLong
@@ -45,11 +49,14 @@ fun JsonParser.productItem(): ProductItem {
             it.boolean("compatible") -> compatible = valueAsBoolean
             it.boolean("canUpdate") -> canUpdate = valueAsBoolean
             it.number("matchRank") -> matchRank = valueAsInt
+            it.number("updated") -> updated = valueAsLong
+            it.number("added") -> added = valueAsLong
             else -> skipChildren()
         }
     }
     return ProductItem(
         repositoryId, packageName, name, summary, icon, metadataIcon,
         version, installedVersion, compatible, canUpdate, matchRank,
+        updated, added,
     )
 }

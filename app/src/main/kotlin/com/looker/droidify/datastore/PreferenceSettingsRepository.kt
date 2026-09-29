@@ -207,6 +207,9 @@ class PreferenceSettingsRepository(
         }
     }
 
+    override suspend fun setGroupAppsByReleaseDate(enabled: Boolean) =
+        GROUP_APPS_BY_RELEASE_DATE.update(enabled)
+
     private fun mapSettings(preferences: Preferences): Settings {
         val installerType =
             InstallerType.valueOf(preferences[INSTALLER_TYPE] ?: InstallerType.Default.name)
@@ -252,6 +255,7 @@ class PreferenceSettingsRepository(
         val deleteApkOnInstall = preferences[DELETE_APK_ON_INSTALL] ?: false
         val downloadStatisticsEnabled = preferences[DOWNLOAD_STATISTICS_ENABLED] ?: true
         val reproducibilityLogsEnabled = preferences[REPRODUCIBILITY_LOGS_ENABLED] ?: true
+        val groupAppsByReleaseDate = preferences[GROUP_APPS_BY_RELEASE_DATE] ?: true
 
         return Settings(
             language = language,
@@ -278,6 +282,7 @@ class PreferenceSettingsRepository(
             deleteApkOnInstall = deleteApkOnInstall,
             dlStatsEnabled = downloadStatisticsEnabled,
             rbLogsEnabled = reproducibilityLogsEnabled,
+            groupAppsByReleaseDate = groupAppsByReleaseDate,
         )
     }
 
@@ -307,6 +312,7 @@ class PreferenceSettingsRepository(
         val DELETE_APK_ON_INSTALL = booleanPreferencesKey("key_delete_apk_on_install")
         val DOWNLOAD_STATISTICS_ENABLED = booleanPreferencesKey("key_download_statistics_enabled")
         val REPRODUCIBILITY_LOGS_ENABLED = booleanPreferencesKey("key_reproducibility_logs_enabled")
+        val GROUP_APPS_BY_RELEASE_DATE = booleanPreferencesKey("key_group_apps_by_release_date")
         val LEGACY_INSTALLER_COMPONENT_CLASS =
             stringPreferencesKey("key_legacy_installer_component_class")
         val LEGACY_INSTALLER_COMPONENT_ACTIVITY =
@@ -371,6 +377,7 @@ class PreferenceSettingsRepository(
             set(DELETE_APK_ON_INSTALL, settings.deleteApkOnInstall)
             set(DOWNLOAD_STATISTICS_ENABLED, settings.dlStatsEnabled)
             set(REPRODUCIBILITY_LOGS_ENABLED, settings.rbLogsEnabled)
+            set(GROUP_APPS_BY_RELEASE_DATE, settings.groupAppsByReleaseDate)
             return this.toPreferences()
         }
     }
